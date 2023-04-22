@@ -1,0 +1,145 @@
+.whoweare {
+    background-color: #ffff;
+    padding: 80px 0px 130px 0px;
+    &__container {
+    }
+
+    &__header {
+        margin: 0px 0px 100px 0px;
+    }
+
+    &__body {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__video {
+        flex: 0 0 57%; /* 600px/1046px *** 14.40*/
+        position: relative;
+        padding: 0px 0px 42.25% 0px; /* 442/1046*100=42.25% */
+    }
+    &__video iframe {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+
+    &__content {
+        flex: 1 1 auto;
+        padding: 20px 0px 0px 121px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 142%;
+        letter-spacing: 0.2px;
+        color: #252B42;
+    }
+    &__title:not(:last-child) {
+        margin: 0px 0px 10px 0px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 142%;
+        letter-spacing: 0.2px;
+        color: #737373;
+    }
+    &__top:not(:last-child) {
+        margin: 0px 0px 50px 0px;
+    }
+
+    &__items {
+    }
+
+    &__item {
+    }
+    &__item:not(:last-child) {
+        margin: 0px 0px 30px 0px;
+    }
+}
+
+.item-whoweare {
+    display: flex;
+    &__icon {
+        flex: 0 0 32px;
+    }
+
+    &__body {
+        flex: 1 1  auto;
+        padding: 0px 0px 0px 20px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.1px;
+        color: #252B42;
+    }
+    &__title:not(:last-child) {
+        margin: 0px 0px 5px 0px;
+    }
+
+    &__text {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 171%;
+        letter-spacing: 0.2px;
+        color: #737373;
+        /*1 чтобы получилось троеточие32,17 */
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 225px;
+        overflow: hidden;
+        /*1 чтобы получилось троеточие32,17 */
+    }
+}
+@media (max-width: 1080px) { 
+    .whoweare {
+        &__content {
+            padding: 0px 0px 0px 50px;
+        }
+    }
+}
+@media (max-width: 950px) { 
+    .whoweare {
+        padding: 50px 0px 50px 0px;
+        &__body {
+            flex-direction: column-reverse;
+            align-items: stretch;/* чтобы вернуть видео 42 */
+        }
+        &__header {
+            margin: 0px 0px 30px 0px;
+        }
+        &__title {
+            font-size: 24px;
+        }        
+        &__content {
+            padding: 0px 0px 0px 0px;
+        }
+        &__video {
+            padding: 0px 0px 56.25% 0px;/* 315/560=56.25 из iframe */
+        }
+        &__video:not(:last-child) {
+            margin: 50px 0px 0px 0px;
+        }        
+    }
+}/* 315/560=56.25 */
+
+@media (max-width: 767px) {
+    .whoweare {
+        padding: 20px 0px 50px 0px;
+        &__video:not(:last-child) {
+            margin: 30px 0px 0px 0px;
+        }
+        &__top:not(:last-child) {
+            margin: 0px 0px 30px 0px;
+        } 
+    }
+}
