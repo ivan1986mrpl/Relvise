@@ -1,0 +1,116 @@
+.subscribe {
+    /* синий фон */
+    padding: 0px 0px 20px 0px;
+    position: relative;
+    ::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 77px;
+        width: 100%;
+        z-index: -1;
+        background: #252B42;
+    }
+    /* синий фон */
+    &__container {
+    }
+
+    &__body {
+        /* синий фон */
+        position: relative;
+        /* синий фон */
+        padding: 30px 50px;
+        align-items: center;
+        background: #17213C;
+        border-radius: 2px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 133%;
+        letter-spacing: 0.1px;
+        color: #FFFFFF;
+    }
+
+    &__form {
+        flex: 0 1 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__input {
+        width: 100%;/* адаптивная ширина позволяет адаптироваться на маленьких устройствах */
+        flex: 1 1 auto;
+        min-height: 58px;
+        padding: 0 20px;
+        background: #F9F9F9;
+        border: 1px solid #E6E6E6;
+        border-radius: 5px 0 0 5px;
+        border-right: 0; /* была двойная граница у button и input */
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 200%;
+        letter-spacing: 0.2px;
+        color: #737373;
+        :focus {
+            color: #000;
+        }
+    }
+
+    &__button {
+        background: #FF7B47;
+        border: 1px solid #E6E6E6;
+        border-radius: 0px 5px 5px 0px;
+        display: flex;
+        min-height: 58px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0px 22px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 200%;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+    }
+}
+
+@media (min-width: 1070px) {
+    .subscribe {
+        &__body {
+            margin: 0 30px;
+        }
+    }    
+}
+
+@media (max-width: 810px) {
+    .subscribe {
+        &__body {
+            padding: 20px 15px;
+            margin: 0px -15px; /* чтобы убрать лишние отступы */
+        }
+        &__title {
+            margin: 0px 0px 20px 0px;
+        }
+        &__input {
+            padding: 0 15px;
+        }
+        &__button {
+            padding: 0px 15px;
+        }
+    } 
+}
+
+@media (min-width: 810px) {
+    .subscribe {
+        &__body {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__title {
+            max-width: 266px;
+        }
+    } 
+}

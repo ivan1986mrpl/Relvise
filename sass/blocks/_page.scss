@@ -13,6 +13,11 @@
     }
     &__whoweare {
     }
-    &__clients {
+    &__clients:not(:last-child) {
+        margin: 0px 0px 10px 0px;
+    }
+    &__subscribe {
+    }
+    &__getintouch {        
     }
 }
