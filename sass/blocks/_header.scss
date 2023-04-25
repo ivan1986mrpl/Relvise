@@ -44,6 +44,9 @@
         /* line-height: calc(24 / 14 * 100%); */ /* макет / размер шрифта * 100% */
         color: #737373;
     }
+    &__link:hover {
+        text-decoration: underline;
+    }
 }
 /* 45m - 1.10 */
 

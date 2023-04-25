@@ -1,0 +1,67 @@
+.contacts {
+    padding: 40px 0px 40px 0px;
+    background: #FAFAFA;
+    &__container {
+    }
+
+    &__body {
+    }
+
+    &__content {
+        padding: 0px 0px 25px 0px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 133%;
+        letter-spacing: 0.1px;
+        color: #252B42;
+    }
+    &__title:not(:last-child) {
+        margin: 0px 0px 10px 0px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.2px;
+        color: #737373;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 5px 40px;
+        min-height: 58px;
+        background: #FF7B47;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 200%;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+        transition: all 0.4s ease 0s;
+    }
+    &__button:hover {
+        background: #faededf1;
+        color: #FF7B47;
+    }
+}
+
+@media (min-width: 768px) {
+    .contacts {
+        &__body {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;  
+        }
+        &__content {
+            padding: 0px 20px 0px 0px; /* отступ безопасности , прилипание к кнопке */
+        }
+    }
+}
+

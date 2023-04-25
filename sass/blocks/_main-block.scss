@@ -61,6 +61,7 @@
         line-height: 150%;
         text-align: center;
         margin: 10px 0; /* 1.43 */
+        transition: all 0.4s ease 0s;
     }
 
     &__button:not(:last-child) {
@@ -72,9 +73,19 @@
         color: #FFFFFF;        
     }
 
+    &__button-orange:hover {
+        background: #FFFFFF;
+        color: #FF7B47;        
+    }
+
     &__button-border {
         color: #0D5C63;
         border: 1px solid #0D5C63;
+    }
+
+    &__button-border:hover {
+        color: #FFF;
+        background: #0D5C63;
     }
 }
 @media (max-width: 1300px) {
