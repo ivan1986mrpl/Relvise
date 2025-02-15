@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relvise</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="js/script.js"></script>
 </head>
 
 <body>
@@ -44,8 +45,8 @@
                         <div class="main-block__text">We know how large objects will act, 
                             but things on a small scale.</div>
                         <div class="main-block__buttons">
-                            <a href="" class="main-block__button main-block__button-orange">Get Quote Now</a>
-                            <a href="" class="main-block__button main-block__button-border">Learn More</a>
+                            <a href=""  data-modal class="main-block__button main-block__button-orange">Get Quote Now</a>
+                            <a href=""  data-modal class="main-block__button main-block__button-border">Learn More</a>
                         </div>
                     </div>                    
                 </div>
@@ -230,7 +231,7 @@
 
                     <div class="whoweare__body">
                         <div class="whoweare__video">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/EavLcl_h2po" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/4DUqwBNap9Y?si=QE5Lgf0IfBJ0tkJB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                         <div class="whoweare__content">
                             <div class="whoweare__top">
@@ -308,7 +309,7 @@
                         </form>
                     </div>
                 </div>
-            </section><!-- 1.17 -->
+            </section>
 
             <section class="page__getintouch getintouch">
                 <div class="getintouch__container container">
@@ -328,7 +329,7 @@
                                 <a href="mailto:georgia.young@ple.com" class="item-getintouch__email">georgia.young@ple.com</a>
                             </div>
                             <div class="item-getintouch__label">Get Support</div>
-                            <a href="#" class="item-getintouch__button">Submit Request</a>
+                            <a href="#"  data-modal class="item-getintouch__button">Submit Request</a>
                         </div>
 
                         <div class="getintouch__item item-getintouch item-getintouch_active active">
@@ -340,7 +341,7 @@
                                 <a href="mailto:georgia.young@ple.com" class="item-getintouch__email active">georgia.young@ple.com</a>
                             </div>
                             <div class="item-getintouch__label active">Get Support</div>
-                            <a href="#" class="item-getintouch__button active">Submit Request</a>
+                            <a href="#"  data-modal class="item-getintouch__button active">Submit Request</a>
                         </div>
 
                         <div class="getintouch__item item-getintouch">
@@ -352,12 +353,12 @@
                                 <a href="mailto:georgia.young@ple.com" class="item-getintouch__email">georgia.young@ple.com</a>
                             </div>
                             <div class="item-getintouch__label">Get Support</div>
-                            <a href="#" class="item-getintouch__button">Submit Request</a>
+                            <a href="#"  data-modal class="item-getintouch__button">Submit Request</a>
                         </div>
 
                 </div>
 
-            </section><!-- 1.37 -->
+            </section>
 
             <section class="page__contacts contacts">
                 <div class="contacts__container container">
@@ -366,10 +367,10 @@
                             <h4 class="contacts__title">Consulting Agency For Your Business</h4>
                             <div class="contacts__text">the quick fox jumps over the lazy dog</div>
                         </div>
-                        <a href="#" class="contacts__button">Contact Us</a>
+                        <a href="#"  data-modal class="contacts__button">Contact Us</a>
                     </div>
                 </div>
-            </section><!-- 1.44 -->
+            </section>
 
         </main>
 
@@ -468,6 +469,22 @@
             </div>
         </footer>
 
+        <div class="modal">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <div data-close class="modal__close">&times;</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-up">
+            <svg class="scroll-up__svg" xmlns="" viewBox="-2 -2 52 52">
+                <path class="scroll-up__path" d="
+                M 24,0
+                a24,24 0 0,1 0,48 
+                a24,24 0 0,1 0,-48"/>
+            </svg>
+        </div>
 
     </div>
     <script src="js/script.js"></script>

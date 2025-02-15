@@ -45,7 +45,7 @@
     &__buttons {
         display: flex;
         flex-wrap: wrap;
-        margin: -10px 0; /* 1.43 */
+        margin: -10px 0;
     }
 
     &__button {    
@@ -60,12 +60,12 @@
         font-weight: 700;
         line-height: 150%;
         text-align: center;
-        margin: 10px 0; /* 1.43 */
+        margin: 10px 0; 
         transition: all 0.4s ease 0s;
     }
 
     &__button:not(:last-child) {
-        margin-right: 10px; /* 1.43 */
+        margin-right: 10px;
     }
 
     &__button-orange {
@@ -92,7 +92,7 @@
     .main-block {
         &__image {
             img {
-                object-position: right;/* 1.41 */
+                object-position: right;
             }
         }
     }    
@@ -126,7 +126,7 @@
 @media (min-width: 475px) {
     .main-block {
         &__button:not(:last-child) {
-            margin-right: 10px; /* 1.43 */
+            margin-right: 10px; 
         }
     }
 }

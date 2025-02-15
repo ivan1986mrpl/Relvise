@@ -14,7 +14,7 @@
     }
 
     &__video {
-        flex: 0 0 57%; /* 600px/1046px *** 14.40*/
+        flex: 0 0 57%; /* 600px/1046px */
         position: relative;
         padding: 0px 0px 42.25% 0px; /* 442/1046*100=42.25% */
     }
@@ -112,7 +112,7 @@
         padding: 50px 0px 50px 0px;
         &__body {
             flex-direction: column-reverse;
-            align-items: stretch;/* чтобы вернуть видео 42 */
+            align-items: stretch;/* чтобы вернуть видео  */
         }
         &__header {
             margin: 0px 0px 30px 0px;

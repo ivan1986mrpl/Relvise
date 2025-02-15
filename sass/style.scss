@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 @import 'base/variables';
 @import 'base/mixins';
+@import 'base/toTop';
+@import 'base/modal';
 /* -------------- */
 *,
 *:before,
@@ -48,7 +50,7 @@ body {
 /* ---------------------------- */
 .wrapper {
     min-height: 100%;
-    overflow: hidden; /* все,что за пределами видимости, недоступно */
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -56,9 +58,8 @@ body {
     max-width: 1046px;
     margin: 0 auto;
     padding: 0px 15px;
-    box-sizing: content-box; /* падинги не считаются в размер контейнера */
+    box-sizing: content-box;
 }
-/* --1.20---bakground----------- */
 .ibg {
     position: relative;    
 }
@@ -70,18 +71,13 @@ body {
     left: 0;
     object-fit: cover;
 }
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
 /* ---------------- */
-
-
-@media (max-width: 1200px) {    
-}
-@media (max-width: 992px) {    
-}
-@media (max-width: 768px) {
-}
-@media (max-width: 576px) {
-}
-
 @import 'blocks/button';
 @import 'blocks/title';
 @import 'blocks/page';
