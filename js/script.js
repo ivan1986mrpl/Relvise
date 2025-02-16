@@ -51,7 +51,9 @@ window.addEventListener('DOMContentLoaded', () => {
         modal.classList.add('show');
         modal.classList.remove('hide');
         document.body.style.overflow = 'hidden';//запрещаем скрол страницы под модальным окном
-        clearInterval(modalTimerId);//если пользователь уже открывал окно, оно не будет открываться по истечению интервала (убрать строку, если не используется открытие по таймеру)
+        if (modalTimerId) {
+            clearInterval(modalTimerId);//если пользователь уже открывал окно, оно не будет открываться по истечению интервала (убрать строку, если не используется открытие по таймеру)
+        }
     }
 
     function closeModal() {
@@ -78,7 +80,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
         
-    const modalTimerId = setTimeout(openModal, 5000); //открытие окна после 4 секунд
+    const modalTimerId = setTimeout(openModal, 9000); //открытие окна после 9 секунд
 
     //открытие модального окна при пролистывании страницы вниз до конца, сработает обработчик только один раз
     function showModalByScroll() {
@@ -88,6 +90,6 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    window.addEventListener('scroll', showModalByScroll);
+    //window.addEventListener('scroll', showModalByScroll);   
 
 });

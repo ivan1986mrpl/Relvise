@@ -19,7 +19,20 @@ a,
 a:visited {
 	text-decoration: none;
 }
-
+input,
+button,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	color: inherit;
+	background-color: transparent;
+}
+button,
+select,
+option {
+	cursor: pointer;
+}
 ul, ol, li {
 	list-style: none;
 }
@@ -48,6 +61,14 @@ body {
     font-weight: 500;
 }
 /* ---------------------------- */
+body {
+	.lock & {
+		overflow: hidden;
+		touch-action: none;
+		overscroll-behavior: none;
+	}
+}
+
 .wrapper {
     min-height: 100%;
     overflow: hidden;
