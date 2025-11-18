@@ -27,15 +27,14 @@
 
   @extend %btn;
 
-  @media (max-width: em(375)){
+  @media (max-width: em(375)) {
     width: 100%;
-      
   }
 
   &--transparent {
+    color: var(--color-green);
     background-color: transparent;
     border: 1px solid var(--color-green);
-    color: var(--color-green);
   }
 }
 
@@ -53,9 +52,9 @@
   &--min {
     padding-block: rem(15);
     padding-inline: rem(28);
+    font-weight: 500;
     border: 1px solid var(--color-white);
     border-radius: 0 5px 5px 0;
-    font-weight: 500;
   }
 }
 

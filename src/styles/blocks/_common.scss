@@ -2,31 +2,48 @@
 
 .header-block {
   text-align: center;
+
   &--hero {
     text-align: left;
+
     .header-block__title {
-      font-weight: 800;
       font-size: fluid(58, 35);
-      line-height: 1.37931;
-      letter-spacing: 0em;
+      font-weight: 800;
+      line-height: 1.4;
+      letter-spacing: 0;
       color: var(--color-black);
+
       &:not(:last-child) {
         margin-bottom: fluid(35, 20);
       }
     }
+
     .header-block__text {
-      font-weight: 500;
       font-size: rem(20);
+      font-weight: 500;
       line-height: 1.5;
       color: var(--color-black);
     }
   }
+
   &__title {
-    font-weight: 700;
     font-size: fluid(40, 30);
+    font-weight: 700;
     color: var(--color-dark);
+
     &:not(:last-child) {
       margin-bottom: rem(10);
+    }
+  }
+}
+
+.advantages,
+.clients,
+.getintouch,
+.practice {
+  &__header-block {
+    &:not(:last-child) {
+      margin-bottom: fluid(50, 20);
     }
   }
 }
