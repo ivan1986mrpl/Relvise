@@ -1,9 +1,9 @@
 @use '../../styles/helpers/' as *;
 
 .menu {
-  --menu-link: #f0ede8;
-  --menu-background: #1f2a32;
-  --menu-background-before: #1f2a32;
+  --menu-link: var(--color-black);
+  --menu-background: var(--color-green);
+  --menu-background-before: var(--color-green);
 
   @media (max-width: em(767.98)) {
     position: fixed;

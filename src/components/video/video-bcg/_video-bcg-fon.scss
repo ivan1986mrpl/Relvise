@@ -1,17 +1,42 @@
-@use '../../styles/helpers/' as *;
+@use '../../../styles/helpers/' as *;
+
+.parrent-video-fon {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-fon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.7;
+}
+
+/* 
+<section class="page__hero hero parrent-video-fon">
+  <div class="hero__container">
+  </div>
+  <video class="video-fon" autoplay muted loop>
+    <source type="video/mp4" src="assets/video/1.mp4">
+  </video>
+</section>
 
 .parrent-video-fon {
   position: relative; // задать секции, на которой висит видео
   overflow: hidden;
 
   // background-color: #000000; // надо задать если есть радиусы у самой секции
-  &__container {
-    position: relative;
-    z-index: 2;
-  }
+  // .hero__container {
+  //   position: relative;
+  //   z-index: 2;
+  // }
 }
 
-.video-bcg-fon {
+.video-fon {
   position: absolute;
   top: 0;
   left: 0;
@@ -21,14 +46,6 @@
   object-position: center;
   opacity: 0.5;
 }
-
-/* 
-<section class="page__hero hero parrent-video-fon">
-  <div class="hero__container">
-  </div>
-  <video class="video-bcg-fon" autoplay muted loop>
-    <source type="video/mp4" src="assets/video/1.mp4">
-  </video>
-</section> */
+*/
 
 /* pexels.com = download video */

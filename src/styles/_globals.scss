@@ -6,13 +6,9 @@ body {
   font-size: var(--font-size);
   font-weight: var(--font-weight);
   line-height: var(--line-height);
-  letter-spacing: -0.02em;
-  color: var(--color-white);
-  background-color: var(--color-dark);
-
-  @media (max-width: em(767.98)) {
-    font-size: var(--font-size-mobile);
-  }
+  letter-spacing: -0.01em;
+  color: var(--color-gray);
+  background-color: var(--color-white);
 
   [data-scroll-lock] & {
     overflow: hidden;

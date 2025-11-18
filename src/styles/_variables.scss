@@ -1,6 +1,5 @@
 @use 'helpers' as *;
 
-// --f-font-size: #{rem(16)}; #{rgba(#000, 10%) (если используем функции в css переменных, надо обернуть в #{} , иначе функции не будут работать)
 :root {
   --scrollbar-width: 0rem;
   --z-index-header: 50;
@@ -12,44 +11,27 @@
   --font-family: 'Montserrat', sans-serif;
   --second-family: 'Montserrat', sans-serif;
 
-  --container-width: #{rem(1046)};
+  --container-width: #{rem(1200)};
   --container-padding-x: #{rem(15)};
   --transition-duration: 0.3s;
   --transition: 0.3s ease 0s;
 
-  --font-size: #{rem(18)};
-  --font-size-mobile: #{rem(16)};
-  --font-weight: 400;
-  --line-height: 1.5;
+  --font-size: #{rem(16)};
+  --font-weight: 500;
+  --line-height: 1.42;
 
-  --main-color: var(--color-white);
+  --main-color: var(--color-gray);
   --second-color: var(--color-dark);
+  --accent-color: var(--color-orange);
+  --hover-color: var(--color-orange);
+  --hover-background: var(--color-orange);
+  --scroll-up: var(--color-orange);
 
-  // --accent-color: var();
-  // --hover-color: var();
-  // --hover-background: var();
-  // --scroll-up: var();
-
-  --color-white: #ffffff;
-  --color-dark: #0f172a;
-  --color-gray: #534d4d;
-  --border: 1px solid var(--main-color);
-  --border-radius: #{rem(10)};
-  --border-radius-btn: #{rem(8)};
-
-  //**********
-  --primary-color: #ff7b47;
-  --secondary-color-1: #0d5c63;
-  --secondary-color-2: #17213c;
-  --text-color: #252b42;
-  --second-text-color: #737373;
-  --light-text-color: #fff;
-  --dark-background-color: #252b42;
-  --light-background-color: #fff;
-  --hover-color: #2a7cc7;
-  --disabled-element-color: #8ec2f2;
-  --muted-color: #bdbdbd;
-  --success-color: #2dc071;
-  --alert-color: #e77c40;
-  --danger-color: #e74040;
+  --color-white: #ffffff; // --light-text-color
+  --color-black: #000000;
+  --color-dark: #252b42; // --text-color
+  --color-gray: #737373; // --second-text-color
+  --color-orange: #ff7b47; // --primary-color
+  --color-green: #0d5c63; // --secondary-color-1
+  --color-blue: #17213c; // --secondary-color-2
 }

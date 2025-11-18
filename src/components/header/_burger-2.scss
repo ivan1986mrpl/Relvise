@@ -2,7 +2,7 @@
 
 //  animated
 .burger-button {
-  --burger-button-color-line: #ffffff;
+  --burger-button-color-line: var(--color-black);
   --burger-button-color-bcg: #ffa501;
   --burger-button-color-hover: #ffa501;
   --burger-button-color-open: #ffa501;
@@ -53,8 +53,6 @@
         width: 80%;
       }
 
-      // &:last-child {
-      // }
     }
 
     &.is-active {

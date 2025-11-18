@@ -89,25 +89,98 @@
         </div>
       </header>
       <main class="page">
-        <section class="page__hero hero" aria-labelledby="hero-title">
+        <section
+          class="parrent-video-fon page__hero hero"
+          aria-labelledby="hero-title"
+        >
           <div class="hero__container">
             <div class="hero__wrapper">
               <div class="hero__header-block header-block header-block--hero">
-                <h1 class="header-block__title" id="hero-title"></h1>
+                <h1 class="header-block__title" id="hero-title">
+                  Finance and Consultancy Solution
+                </h1>
                 <div class="header-block__text">
-                  <p></p>
+                  <p>
+                    We know how large objects will act, but things on a small
+                    scale.
+                  </p>
                 </div>
               </div>
-              <div class="header-block__buttons">
-                <a
-                  href="/"
-                  class="button button-border header-block__button"
-                ></a>
+              <div class="hero__buttons">
+                <button type="button" class="button hero__button">
+                  Get Quote Now
+                </button>
+                <button
+                  type="button"
+                  class="button button--transparent hero__button"
+                >
+                  Learn More
+                </button>
               </div>
             </div>
           </div>
-          <div class="hero__image ibg">
-            <img src="img/background_promo.jpg" alt="promo" />
+          <video class="video-fon" autoplay muted loop>
+            <source type="video/mp4" src="assets/video/5.mp4" />
+          </video>
+        </section>
+
+        <section
+          class="page__servises servises"
+          aria-labelledby="servises-title"
+        >
+          <div class="servises__container">
+            <h2 class="servises__title visually-hidden" id="servises-title">
+              Services
+            </h2>
+            <div class="servises__wrapper">
+              <article class="servises__card card-servise">
+                <div class="card-servise__icon">
+                  <img
+                    src="assets/img/servises/01.svg"
+                    alt="servise"
+                    width="48"
+                    height="48"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="card-servise__title">Environmental Consulting</h3>
+                <div class="card-servise__text">
+                  We focus on ergonomics and meeting you where you work.
+                </div>
+              </article>
+              <article class="servises__card card-servise">
+                <div class="card-servise__icon">
+                  <img
+                    src="assets/img/servises/2.svg"
+                    alt="servise"
+                    width="48"
+                    height="48"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="card-servise__title">Finance and consultancy</h3>
+                <div class="card-servise__text">
+                  Just type what's on your mind and we'll get you there.
+                </div>
+              </article>
+              <article class="servises__card card-servise green">
+                <div class="card-servise__icon">
+                  <img
+                    src="assets/img/servises/3.svg"
+                    alt="servise"
+                    width="48"
+                    height="48"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="card-servise__title">
+                  Financial Services Consulting
+                </h3>
+                <div class="card-servise__text">
+                  the quick fox jumps over the lazy dog
+                </div>
+              </article>
+            </div>
           </div>
         </section>
       </main>

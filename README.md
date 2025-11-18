@@ -1,8 +1,8 @@
 # Landing
 
-- Design: [link]()
+- Design: [link](https://www.figma.com/community/file/912411543875357758)
 
-- Deploy: [link]()
+- Deploy: [link](https://ivan1986mrpl.github.io/Relvise/)
 
 - Technologies: HTML, SCSS, Javascript, Vite, Eslint, Stylelint, Prettier
 
