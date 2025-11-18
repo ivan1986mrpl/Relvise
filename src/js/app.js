@@ -10,7 +10,7 @@ import ScrollUpButton from '../components/scrollUpButton/ScrollUpButton';
 // import VideoLazy from '../components/video/video-lazy/VideoLazy';
 import Popup from '../components/Popup/Popup';
 import VideoPlayerCollection from './../components/video/video-player/VideoPlayer';
-// import scroller from '../components/scroller/scroller';
+import scroller from '../components/scroller/scroller';
 import LoginCard from '../components/loginCard/LoginCard';
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   new CounterAnimationCollection();
   // spollers();
   new ScrollUpButton();
-  // scroller();
+  scroller();
   // new CountdownTimer('.countdown', 86440, 'Time is up!');
   // new VideoLazy(
   //   'https://www.youtube.com/embed/J1d4nCXNlDs?si=FwqnJhoHvI-mTHg6',
