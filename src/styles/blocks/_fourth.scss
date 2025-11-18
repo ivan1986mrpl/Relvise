@@ -20,14 +20,16 @@
 .item-practice {
   display: flex;
   flex-direction: column;
+
   &__content {
-    padding: fluid(30, 10);
     flex: 1 1 auto;
+    padding: fluid(30, 10);
   }
 
   &__link {
-    color: var(--color-dark);
     font-weight: 700;
+    color: var(--color-dark);
+
     &:not(:last-child) {
       margin-bottom: 15px;
     }
