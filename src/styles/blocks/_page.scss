@@ -1,6 +1,11 @@
 @use '../helpers' as *;
 
-[class*='page__']:not(.page__hero, .page__servises, .page__clients) {
+[class*='page__']:not(
+  .page__hero,
+  .page__servises,
+  .page__clients,
+  .page__subscribe
+) {
   padding-top: fluid(80, 20);
   padding-bottom: fluid(80, 20);
 }

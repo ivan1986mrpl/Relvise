@@ -486,7 +486,7 @@
           </div>
         </section>
 
-        <div class="page__clients clients" aria-labelledby="clients-title">
+        <section class="page__clients clients" aria-labelledby="clients-title">
           <div class="clients__container">
             <h2 class="clients__title visually-hidden" id="clients-title">
               Clients
@@ -550,7 +550,33 @@
               </ul>
             </div>
           </div>
-        </div>
+        </section>
+
+        <section
+          class="page__subscribe subscribe"
+          aria-labelledby="subscribe-title"
+        >
+          <div class="subscribe__container">
+            <div class="subscribe__body">
+              <h2 class="subscribe__title" id="subscribe-title">
+                Subscribe For Latest Newsletter
+              </h2>
+              <form action="#" class="subscribe__form">
+                <input
+                  autocomplete="off"
+                  type="email"
+                  required
+                  name="form[]"
+                  placeholder="your Email"
+                  class="subscribe__input"
+                />
+                <button type="submit" class="btn btn--min subscribe__btn">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="footer__container"></div>

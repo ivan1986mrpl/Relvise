@@ -51,10 +51,14 @@
 
   &--min {
     padding-block: rem(15);
-    padding-inline: rem(28);
+    padding-inline: rem(22);
     font-weight: 500;
     border: 1px solid var(--color-white);
     border-radius: 0 5px 5px 0;
+
+    @media (width <= 810px) {
+      padding-inline: rem(15);
+    }
   }
 }
 
