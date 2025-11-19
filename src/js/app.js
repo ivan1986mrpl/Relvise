@@ -4,7 +4,7 @@ import pageNavigation from './modules/pageNavigation';
 import headerFon from '../components/header/headerFon';
 import Header from './../components/header/Header';
 import CounterAnimationCollection from '../components/CounterAnimation/CounterAnimation';
-// import spollers from '../components/spollers/spollers';
+import spollers from '../components/spollers/spollers';
 import ScrollUpButton from '../components/scrollUpButton/ScrollUpButton';
 // import CountdownTimer from '../components/timer/CountdownTimer';
 // import VideoLazy from '../components/video/video-lazy/VideoLazy';
@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
   headerFon();
   new Header();
   new CounterAnimationCollection();
-  // spollers();
+  spollers();
   new ScrollUpButton();
   scroller();
   // new CountdownTimer('.countdown', 86440, 'Time is up!');

@@ -59,6 +59,10 @@
     @media (width <= 810px) {
       padding-inline: rem(15);
     }
+
+    @media (max-width: em(375)) {
+      border-radius: 0;
+    }
   }
 }
 

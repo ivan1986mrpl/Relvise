@@ -82,13 +82,13 @@ h6 {
   font-weight: inherit;
 }
 
-[fill] {
-  fill: currentColor;
-}
+// [fill] {
+//   fill: currentColor;
+// }
 
-[stroke] {
-  stroke: currentColor;
-}
+// [stroke] {
+//   stroke: currentColor;
+// }
 
 svg * {
   transition-property: fill, stroke;
