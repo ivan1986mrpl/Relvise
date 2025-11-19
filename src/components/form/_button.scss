@@ -49,6 +49,10 @@
 
   @extend %btn;
 
+  @media (max-width: em(375)) {
+    width: 100%;
+  }
+
   &--min {
     padding-block: rem(15);
     padding-inline: rem(22);
