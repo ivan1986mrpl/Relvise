@@ -1,0 +1,83 @@
+@use '../../styles/helpers/' as *;
+
+%btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: var(--transition);
+
+  &:active {
+    scale: 1.05;
+  }
+
+  @include hover {
+    opacity: 0.7;
+  }
+
+  @media (max-width: em(375)) {
+    width: 100%;
+  }
+}
+
+.button {
+  padding-block: rem(10);
+  padding-inline: rem(36);
+  font-weight: 700;
+  line-height: 2;
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  border-radius: 37px;
+
+  @extend %btn;
+
+  &--transparent {
+    color: var(--color-green);
+    background-color: transparent;
+    border: 1px solid var(--color-green);
+  }
+}
+
+.btn {
+  padding-block: rem(15);
+  padding-inline: rem(40);
+  font-weight: 700;
+  line-height: 2;
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  border-radius: 5px;
+
+  @extend %btn;
+
+  &--min {
+    padding-block: rem(15);
+    padding-inline: rem(22);
+    font-weight: 500;
+    border: 1px solid var(--color-white);
+    border-radius: 0 5px 5px 0;
+
+    @media (width <= 810px) {
+      padding-inline: rem(15);
+    }
+
+    @media (max-width: em(375)) {
+      border-radius: 0;
+    }
+  }
+}
+
+.btn-2 {
+  padding-block: rem(10);
+  padding-inline: rem(20);
+  font-weight: 600;
+  color: var(--color-orange);
+  border: 1px solid var(--color-orange);
+  border-radius: 5px;
+
+  @extend %btn;
+
+  &--active {
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+  }
+}

@@ -1,0 +1,17 @@
+@use '../helpers/' as *;
+
+.clients {
+  padding: fluid(50, 25);
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex: 0 1 16.6667%;
+    min-width: 140px;
+    padding: 8px 15px;
+    text-align: center;
+  }
+}

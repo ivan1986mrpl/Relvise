@@ -1,0 +1,33 @@
+@use '../helpers' as *;
+
+.hero {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  padding-top: 0;
+
+  &__container {
+    flex: 1 1 auto;
+    position: relative;
+    z-index: 2;
+    padding-top: fluid(200, 90);
+    padding-bottom: fluid(200, 40);
+  }
+
+  &__wrapper {
+    max-width: 500px;
+  }
+
+  &__header-block {
+    &:not(:last-child) {
+      margin-bottom: fluid(35, 20);
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+}

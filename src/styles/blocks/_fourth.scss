@@ -1,0 +1,41 @@
+@use '../helpers' as *;
+
+.practice {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: stretch;
+    gap: 16px;
+
+    @media (max-width: em(1024)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: em(767.98)) {
+      grid-template-columns: auto;
+    }
+  }
+}
+
+.item-practice {
+  display: flex;
+  flex-direction: column;
+
+  &__content {
+    flex: 1 1 auto;
+    padding: fluid(30, 10);
+  }
+
+  &__link {
+    font-weight: 700;
+    color: var(--color-dark);
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__image {
+    aspect-ratio: 230 / 138;
+  }
+}

@@ -1,0 +1,82 @@
+@use '../helpers' as *;
+
+.footer {
+  &__top {
+    padding: fluid(35, 20) 0;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+  }
+
+  &__botton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 20px 0;
+
+    @media (max-width: em(767.98)) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__top-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+
+    @media (max-width: em(767.98)) {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    font-size: rem(18);
+    font-weight: 700;
+  }
+
+  &__wrapper {
+    padding-block: 10px;
+  }
+
+  &__link {
+    display: block;
+
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+
+    @include hover {
+      color: var(--color-orange);
+    }
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    min-height: 30px;
+    padding: 0 0 0 34px;
+    font-weight: 600;
+
+    &:not(:last-child) {
+      margin-bottom: rem(12);
+    }
+
+    &-phone {
+      background: url('../assets/img/footer/phone.svg') 0 0 no-repeat;
+    }
+
+    &-map {
+      background: url('../assets/img/footer/location.svg') 0 0 no-repeat;
+    }
+
+    &-email {
+      background: url('../assets/img/footer/telegram.svg') 0 0 no-repeat;
+    }
+  }
+}

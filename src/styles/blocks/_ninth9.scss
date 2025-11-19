@@ -1,0 +1,34 @@
+@use '../helpers' as *;
+
+.contacts {
+  padding-block: rem(40);
+
+  &__content {
+    padding: 0 0 25px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--color-dark);
+
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+  }
+}
+
+@media (width >= 767.98px) {
+  .contacts {
+    &__body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__content {
+      padding: 0 20px 0 0;
+    }
+  }
+}

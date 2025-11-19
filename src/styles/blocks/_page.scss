@@ -1,0 +1,18 @@
+@use '../helpers' as *;
+
+[class*='page__']:not(
+  .page__hero,
+  .page__servises,
+  .page__clients,
+  .page__subscribe,
+  .page__contacts
+) {
+  padding-top: fluid(80, 20);
+  padding-bottom: fluid(80, 20);
+}
+
+.page__servises {
+  position: relative;
+  z-index: 2;
+  margin-top: fluid(-110, -30);
+}

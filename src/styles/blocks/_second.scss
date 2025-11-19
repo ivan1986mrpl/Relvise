@@ -1,0 +1,37 @@
+@use '../helpers' as *;
+
+.servises {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    gap: fluid(30, 20);
+
+    @media (max-width: em(991.98)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: em(767.98)) {
+      grid-template-columns: auto;
+    }
+  }
+}
+
+.card-servise {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: fluid(35, 16);
+  background-color: var(--color-white);
+  box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
+
+  &__title {
+    font-size: fluid(24, 18);
+    font-weight: 700;
+  }
+}
+
+.green {
+  color: var(--color-white);
+  background-color: var(--color-green);
+}

@@ -1,0 +1,60 @@
+@use '../helpers' as *;
+
+.getintouch {
+  &__items {
+    margin: 0 -15px;
+
+    @media (min-width: em(991.98)) {
+      display: flex;
+      align-items: center;
+      margin: 0;
+    }
+  }
+
+  &__item {
+    flex: 0 1 33.333%;
+
+    &:not(:last-child) {
+      margin-bottom: rem(15);
+    }
+  }
+}
+
+.item-getintouch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 50px 15px;
+  text-align: center;
+  color: var(--color-dark);
+  background: #f3f3f3;
+
+  &--active {
+    padding: 80px 15px;
+    color: var(--color-white);
+    background-color: var(--color-dark);
+
+    @media (max-width: em(991.98)) {
+      padding: 50px 15px;
+    }
+  }
+
+  &__emails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__email {
+    min-height: 35px;
+    font-weight: 600;
+  }
+
+  &__label {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
