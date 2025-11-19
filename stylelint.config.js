@@ -7,7 +7,6 @@ export default {
     '**/node_modules/**',
     '**/dist/**',
     '**/build/**',
-    '**/sourse/**',
     '**/coverage/**',
     '**/*.log',
     '**/npm-debug.log*',
