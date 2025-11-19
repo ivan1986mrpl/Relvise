@@ -14,6 +14,10 @@
   @include hover {
     opacity: 0.7;
   }
+
+  @media (max-width: em(375)) {
+    width: 100%;
+  }
 }
 
 .button {
@@ -26,10 +30,6 @@
   border-radius: 37px;
 
   @extend %btn;
-
-  @media (max-width: em(375)) {
-    width: 100%;
-  }
 
   &--transparent {
     color: var(--color-green);
@@ -48,10 +48,6 @@
   border-radius: 5px;
 
   @extend %btn;
-
-  @media (max-width: em(375)) {
-    width: 100%;
-  }
 
   &--min {
     padding-block: rem(15);
@@ -76,7 +72,7 @@
 
   @extend %btn;
 
-  &--mod {
+  &--active {
     color: var(--color-white);
     border: 1px solid var(--color-white);
   }
