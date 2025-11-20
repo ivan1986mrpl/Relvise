@@ -15,7 +15,7 @@
     width: 60px;
     height: 16px;
     margin: 10px auto;
-    background-color: #ffeba7;
+    background-color: var(--color-orange);
     border-radius: 8px;
     cursor: pointer;
 
@@ -25,7 +25,7 @@
       left: -10px;
       width: 36px;
       height: 36px;
-      background-color: #1e3fa9;
+      background-color: var(--color-blue);
       border: none;
       border-radius: 50%;
       cursor: pointer;
@@ -61,7 +61,7 @@
     @extend %abs100;
 
     overflow: hidden;
-    background-color: #2a2b38;
+    background-color: var(--color-blue);
     border-radius: 12px;
     box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
     transform-style: preserve-3d;
@@ -90,7 +90,7 @@
 
 .popup-login {
   [data-popup-body] {
-    background-color: #343657;
+    background-color: var(--color-green);
   }
 
   &__content {
@@ -100,6 +100,7 @@
     align-items: center;
     padding: 15px fluid(15, 3);
     text-align: center;
+    color: var(--color-white);
   }
 }
 

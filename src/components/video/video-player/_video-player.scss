@@ -2,21 +2,15 @@
 
 .video-player {
   position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  width: 100%;
 
   &__video {
+    display: block;
     width: 100%;
+    height: 100%;
     object-fit: cover;
-
-    // height: fluid(412, 210);
-    // border-radius: rem(12);
-
-    // @include laptop {
-    //   border-radius: rem(10);
-    // }
-
-    // &--small {
-    //   height: fluid(290, 208);
-    // }
   }
 
   &__panel {
@@ -80,16 +74,17 @@
 /* 
 <div class="video-player" data-video-player>
   <video
-    class="video-player__video video-player__video--small"
-    src="./assets/video/1.mp4"
-    width="470"
-    height="390"
-    poster="./assets/img/videos/poster-1.webp"
+    class="video-player__video"
+    src="./assets/video/5.mp4"
+    poster="./assets/img/background_promo.webp"
     data-video-player-video
   ></video>
-  <div class="video-player__panel is-active" data-video-player-panel>
+  <div
+    class="video-player__panel is-active"
+    data-video-player-panel
+  >
     <button
-      class="video-player__play-button"
+      class="video-player__play-button pulse"
       type="button"
       aria-label="Play video"
       title="Play video"

@@ -22,9 +22,9 @@
       sizes="16x16"
       href="./assets/img/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="./assets/img/favicon/site.webmanifest" />
-    <script type="module" src="./assets/js/app.js"></script>
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest" />    
     <link rel="stylesheet" href="./assets/css/app.css">
+    <script type="module" src="./assets/js/app.js"></script>
   </head>
 
   <body>
@@ -48,13 +48,19 @@
                   >
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link hover-link" data-goto="."
-                    >Product</a
+                  <a
+                    href="#"
+                    class="menu__link hover-link"
+                    data-goto=".advantages"
+                    >Advantages</a
                   >
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link hover-link" data-goto="."
-                    >Pricing</a
+                  <a
+                    href="#"
+                    class="menu__link hover-link"
+                    data-goto=".practice"
+                    >Practice</a
                   >
                 </li>
                 <li class="menu__item">
@@ -107,12 +113,17 @@
                 </div>
               </div>
               <div class="hero__buttons">
-                <button type="button" class="button hero__button">
+                <button
+                  type="button"
+                  class="button hero__button"
+                  data-popup-link="popup"
+                >
                   Get Quote Now
                 </button>
                 <button
                   type="button"
                   class="button button--transparent hero__button"
+                  data-popup-link="popup"
                 >
                   Learn More
                 </button>
@@ -394,8 +405,6 @@
                   <video
                     class="video-player__video"
                     src="./assets/video/1.mp4"
-                    width="600"
-                    height="442"
                     poster="./assets/img/whoweare/cover.webp"
                     data-video-player-video
                   ></video>
@@ -618,7 +627,10 @@
                   >
                 </div>
                 <h3 class="item-getintouch__label">Get Support</h3>
-                <button class="btn-2 item-getintouch__button">
+                <button
+                  class="btn-2 item-getintouch__button"
+                  data-popup-link="popup-login"
+                >
                   Submit Request
                 </button>
               </article>
@@ -647,7 +659,10 @@
                   >
                 </div>
                 <h3 class="item-getintouch__label">Get Support</h3>
-                <button class="btn-2 btn-2--active item-getintouch__button">
+                <button
+                  class="btn-2 btn-2--active item-getintouch__button"
+                  data-popup-link="popup-login"
+                >
                   Submit Request
                 </button>
               </article>
@@ -674,7 +689,11 @@
                   >
                 </div>
                 <h3 class="item-getintouch__label">Get Support</h3>
-                <button data-modal class="btn-2 item-getintouch__button">
+                <button
+                  data-modal
+                  class="btn-2 item-getintouch__button"
+                  data-popup-link="popup-login"
+                >
                   Submit Request
                 </button>
               </article>
@@ -1115,10 +1134,8 @@
             <div data-popup-content class="popup__content">
               <div class="video-player" data-video-player>
                 <video
-                  class="video-player__video video-player__video--small"
-                  src="./assets/video/1.mp4"
-                  width="470"
-                  height="390"
+                  class="video-player__video"
+                  src="./assets/video/5.mp4"
                   poster="./assets/img/background_promo.webp"
                   data-video-player-video
                 ></video>
